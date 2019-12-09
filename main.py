@@ -5,8 +5,8 @@ url = "pagina?argumentos"
 indice = url.find("?")
 print(url[indice + 1: )
 '''
-url = "https://bytebank.com/cambio?moedaorigem=real&moedadestino=dolar&valor=700"
+url = "https://bytebank.com/cambio?moedaorigem=moedadestino&moedadestino=dolar"
 
 argumentosUrl = ExtratoArgumento(url)
 moedaOrigen, moedaDestino = argumentosUrl.extraiArgumentos()
-print(moedaOrigen, moedaDestino)
+print(moedaDestino, moedaOrigen)
